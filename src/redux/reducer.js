@@ -6,3 +6,10 @@ export const loginReducer = createReducer([], (builder) => {
   });
  
 });
+
+
+export const adminReducer = createReducer({},builder => {
+	builder.addCase("ADMIN_DATA",(state,action) => {
+		state.adminData = action.payload;
+	})
+})
